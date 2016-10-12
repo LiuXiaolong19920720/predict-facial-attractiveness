@@ -8,8 +8,7 @@ and replace the file: data/shape_predictor_68_face_landmarks.dat<br>
 
 Then use your own path replace the `root` value in the `*.py` file,if there is a `root`.<br>
 Do not forget add a `/` (not a `\`) at the end of the path.<br>
-Just like this:<br>
-`root = 'E:/Github/predict-facial-attractiveness/'`
+Just like this:`root = 'E:/Github/predict-facial-attractiveness/'`
 
 After that,follow the steps below:<br>
  1.Run `source/trainModel.py` to generate the model which will be used to predict facial attractiveness later.<br>
