@@ -71,7 +71,7 @@ def generateAllFeatures(allLandmarkCoordinates):
 
 	return generateFeatures(pointIndices1, pointIndices2, pointIndices3, pointIndices4, allLandmarkCoordinates)
 
-root = 'E:/face_rating/my_face_rating/'
+root = 'E:/Github/predict-facial-attractiveness/'
 landmarks = numpy.loadtxt(root + 'data/landmarks.txt', delimiter=',', usecols=range(136))
 
 featuresALL = generateAllFeatures(landmarks)

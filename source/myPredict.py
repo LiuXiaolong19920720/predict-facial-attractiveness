@@ -3,7 +3,7 @@ import numpy as np
 from sklearn import decomposition
 
 #use your own path
-root = 'E:/face_rating/my_face_rating/'
+root = 'E:/Github/predict-facial-attractiveness/'
 clf = joblib.load(root+'model/my_face_rating.pkl')
 features = np.loadtxt(root + 'data/features_ALL.txt', delimiter=',')
 my_features = np.loadtxt(root + 'data/my_features.txt', delimiter=',')

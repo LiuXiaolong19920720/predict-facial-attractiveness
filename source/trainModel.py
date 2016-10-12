@@ -18,7 +18,7 @@ from sklearn.externals import joblib
 #args = parser.parse_args()
 
 #replace it by your own folder path
-root = 'E:/face_rating/my_face_rating/'
+root = 'E:/Github/predict-facial-attractiveness/'
 
 features = np.loadtxt(root + 'data/features_ALL.txt', delimiter=',')
 #features = preprocessing.scale(features)

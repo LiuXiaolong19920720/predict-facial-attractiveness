@@ -4,7 +4,7 @@ import dlib
 import numpy  
 import sys  
   
-root = 'E:/face_rating/my_face_rating/'
+root = 'E:/Github/predict-facial-attractiveness/'
 PREDICTOR_PATH = root +  "data/shape_predictor_68_face_landmarks.dat"  
   
 #1.使用dlib自带的frontal_face_detector作为我们的人脸提取器  
