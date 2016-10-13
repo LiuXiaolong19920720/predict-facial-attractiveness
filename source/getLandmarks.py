@@ -3,9 +3,8 @@ import cv2
 import dlib  
 import numpy  
 import sys  
-  
-root = 'E:/Github/predict-facial-attractiveness/'
-PREDICTOR_PATH = root +  "data/shape_predictor_68_face_landmarks.dat"  
+
+PREDICTOR_PATH = "D:/shape_predictor_68_face_landmarks.dat"  
   
 #1.使用dlib自带的frontal_face_detector作为我们的人脸提取器  
 detector = dlib.get_frontal_face_detector()  
@@ -16,7 +15,7 @@ predictor = dlib.shape_predictor(PREDICTOR_PATH)
 class NoFaces(Exception):  
     pass  
   
-im = cv2.imread(root + "image/test.jpg")  
+im = cv2.imread(sys.argv[1])  
 
 #3.使用detector进行人脸检测 rects为返回的结果  
 rects = detector(im,1)  
@@ -28,7 +27,7 @@ if len(rects) >= 1:
 if len(rects) == 0:  
     raise NoFaces  
 	
-f = open(root + 'data/landmarks.txt','w')
+f = open(sys.argv[2],'w')
 for i in range(len(rects)):  
       
     #5.使用predictor进行人脸关键点识别  
@@ -54,4 +53,4 @@ for i in range(len(rects)):
 print "landmarks,get!"	
 cv2.namedWindow("im",2)  
 cv2.imshow("im",im)  
-cv2.waitKey(1000)  
+cv2.waitKey(0)
