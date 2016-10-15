@@ -2,6 +2,10 @@
 
 Using OpenCV and Dlib to predict facial attractiveness.
 ---
+
+![landmarks](https://github.com/LiuXiaolong19920720/predict-facial-attractiveness/blob/master/image/landmarks.JPG)
+
+---
 Download the shape_predictor_68_face_landmarks.dat from:<br>
 http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2<br>
 and replace the file: data/shape_predictor_68_face_landmarks.dat<br>
